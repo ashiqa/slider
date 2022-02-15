@@ -1,0 +1,81 @@
+.toolbar {
+  position: fixed;
+  width: 100%;
+  background: white;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  height: 56px;
+  align-items: center;
+  box-shadow: 0px 10px 40px 0px #18236b33;
+}
+
+.toolbar__navigation {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.toolbar__logo {
+  margin-left: 1 rem;
+}
+
+.toolbar__logo a{
+  color: #9292B0;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.toolbar_navigation-items ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.spacer {
+  flex:1;
+}
+.toolbar_navigation-items li{
+  padding:0 0.5rem;
+}
+.toolbar_navigation-items a{
+  color: #9292B0;
+  text-decoration: none;
+}
+.toolbar_navigation-items a:active,
+.toolbar_navigation-items a:hover{
+  color: rgb(111, 111, 134)
+}
+.app_logo{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .toolbar_navigation-items {
+    display: none;
+  }
+  .toolbar__logo {
+    align-self: center;
+    margin: 30%;
+    font-size: 1.0rem;
+  }
+  .toolbar__logo a{
+    font-size: 1.0rem;
+  }
+  .app_logo{
+    display: flex;
+  }
+  .app_logo_text{
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .toolbar__toggle-button {
+    display: none;
+  }
+  .toolbar__logo {
+    margin-left: 0;
+  }
+}
